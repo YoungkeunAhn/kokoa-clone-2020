@@ -5,9 +5,10 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Kokoa Clone</title>
+    <title>Friend - Kokoa Clone</title>
 </head>
 <body>
+    <!-- 상단 상태바 -->
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -30,23 +31,31 @@
         </div>
     </div>
 
-    <!-- 헤더 영역 -->
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">
-            If you have a Kokoa Account,
-            log in with your email or phone number.
-        </p>
-    </header>
-
-    <!-- 폼 영역-->
-    <form action="friends.html" id="login-form" method="GET">
-        <input name="username" type="text" placeholder="Email or Phone number" required>
-        <input name="passwd"  type="password" placeholder="Password" required>
-        <button type="submit">Log in</button>
-        <button type="button">Sign Up</button>
-        <a href="#">Find Kokoa Account or Password</a>
-    </form>
+    <!-- 메뉴 버튼-->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-btn">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-user fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="#" class="nav-link">
+                    <i class="far fa-comment fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-search fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-ellipsis-h fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </body>
 <script
     src="https://kit.fontawesome.com/6478f529f2.js"
