@@ -1,0 +1,143 @@
+#chatting-body{
+    background-color: #ABC1D1;
+    height: 11000vh;
+}
+
+#chatting-body .alt-header,
+#chatting-body .status-bar{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ABC1D1;
+}
+#chatting-body .status-bar{
+    z-index: 2;
+}
+
+#chatting-body .alt-header{
+    top: 15px;
+    z-index: 1;
+}
+.main-chatting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chatting-timestamp{
+    margin: 100px auto 30px auto;
+    background-color: rgba(0,0,0,0.2);
+    color: #f6f6f6;
+    padding: 10px;
+    text-align: center;
+
+    border-radius: 25px;
+    opacity: 0.8;
+    font-size: 15px;
+}
+.message-row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+.message-row > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 17px;
+    margin-right: 10px;
+}
+
+.message-author{
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.message-info{
+    display: flex;
+    align-items: flex-end;
+}
+.message-bubble{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+}
+.message-time{
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.message-row--my{
+    justify-content: flex-end;
+}
+
+.message-row--my .message-bubble{
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.message-row--my .message-info{
+    flex-direction: row-reverse;
+}
+
+.reply{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.reply__column:first-child{
+    width: 5%;
+    margin-right: 20px;
+}
+.reply__column:first-child i{
+    font-size: 25px;
+    color: var(--gray-color);
+}
+.reply__column:last-child{
+    width: 95%;
+    position: relative;
+}
+.reply__column input{
+    width: 98%;
+    border-radius: 15px;
+    padding: 10px;
+    border: var(--gray-border);
+    
+}
+.reply__column input:focus,
+.reply__column input:active{
+    outline: none;
+}
+
+.reply__column:last-child i{
+    position: absolute;
+}
+.reply__column:last-child i:nth-child(2){
+    bottom: 6px;
+    right: 35px;
+    color: var(--gray-color);
+    font-size: 25px;
+}
+
+.reply__column:last-child i:last-child{
+    bottom: 3px;
+    right: -12px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

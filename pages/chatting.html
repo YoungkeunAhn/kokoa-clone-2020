@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatting - Kokoa Clone</title>
+</head>
+<body id="chatting-body">
+    <!-- 상단 상태바 -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span class="now">
+                <script>
+                    let today = new Date();
+                    let nowHours = "";
+                    let nowMinutes = "";
+                    if(today.getHours() < 10){
+                        nowHours = "0" + today.getHours();
+                    }else{
+                        nowHours = today.getHours();
+                    }
+                    if(today.getMinutes() < 10){
+                        nowMinutes = "0" + today.getMinutes();
+                    }else{
+                        nowMinutes = today.getMinutes();
+                    }
+
+                    now = nowHours + " : " + nowMinutes;
+                    
+                    document.write(now);
+                </script>
+            </span>            
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <!-- 헤더 영역-->
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <i class="fas fa-angle-left fa-2x" onclick="history.back()"></i>
+        </div>
+        <div class="alt-header__column">
+            <h2>영근</h2>
+        </div>
+        <div class="alt-header__column">
+            <i class="fas fa-search fa-lg"></i>
+            <i class="fas fa-bars fa-lg"></i>
+        </div>
+    </header>
+
+    <!-- 스크린 영역-->
+    <main class="main-screen main-chatting">
+        <div class="chatting-timestamp">
+            Tuesday, June, 30, 2020
+        </div>
+
+        <div class="message-row">
+            <img src="../screenshots/user_profile.jpg" alt="message-author-img">
+            <div class="message-row_column">
+                <div class="message-author">RootZero</div>
+                <div class="message-info">
+                    <div class="message-bubble">Hi~</div>
+                    <div class="message-time">21:27</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-row message-row--my">
+            <div class="message-row_column">
+                <div class="message-info">
+                    <div class="message-bubble">Hi! Nice to meet you!</div>
+                    <div class="message-time">21:27</div>
+                </div>
+            </div>
+        </div>
+
+        <form class="reply">
+            <div class="reply__column">
+                <i class="far fa-plus-square"></i>
+            </div>
+            <div class="reply__column">
+                <input type="text" class="reply__input" placeholder="Write a message...">
+                <i class="far fa-smile-wink"></i>
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </form>
+
+    </main>
+</body>
+<script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+></script>
+</html>
