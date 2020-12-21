@@ -1,8 +1,39 @@
 nav{
-    background-color: #f9f9fa;
+    background-color: #f9f9fA;
     padding: 20px 40px;
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    
 }
 .nav-list{
     display: flex;
     justify-content: space-between;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-notification{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.nav-reddot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+
+    background-color: tomato;
+    display: block;
+
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
 }

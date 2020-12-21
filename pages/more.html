@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - Kokoa Clone</title>
+</head>
+<body>
+    <!-- 상단 상태바 -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span class="now">
+                <script>
+                    let today = new Date();
+                    let nowHours = "";
+                    let nowMinutes = "";
+                    if(today.getHours() < 10){
+                        nowHours = "0" + today.getHours();
+                    }else{
+                        nowHours = today.getHours();
+                    }
+                    if(today.getMinutes() < 10){
+                        nowMinutes = "0" + today.getMinutes();
+                    }else{
+                        nowMinutes = today.getMinutes();
+                    }
+
+                    now = nowHours + " : " + nowMinutes;
+                    
+                    document.write(now);
+                </script>
+            </span>            
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+            <i class="fas fa-search fa-lg"></i>
+            <i class="fas fa-music fa-lg"></i>
+            <i class="fas fa-cog fa-lg"></i>
+        </div>
+    </header>
+
+    <!-- screen -->
+    <main class="main-screen">
+        <!-- user component -->
+        <div class="user-component">
+            <div class="user-component__column">
+                <img class="user-component__img" src="../screenshots/user_profile.jpg" alt="user-profile-img">
+                <div class="user-component__text">
+                    <h2 class="user-component__title user-component__title-sm">RootYoung</h2>
+                    <h3 class="user-component__subtitle user-component__subtitle-sm">
+                        +83 010-1234-5678
+                        <i class="fas fa-exclamation-circle"></i>
+                    </h3>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="far fa-comment-alt fa-2x"></i>
+            </div>
+        </div>
+
+        <!-- more menu -->
+        <div class="icon-row icon-row__wrap">
+            <div class="icon-row__icon">
+                <i class="far fa-calendar-check fa-2x"></i>
+                <span>Calender</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-archive fa-2x"></i>
+                <span>Talk Drive</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-smile-wink fa-2x"></i>
+                <span>Emoticons</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-brush fa-2x"></i>
+                <span>Themes</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fab fa-keybase fa-2x"></i>
+                <span>Account</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-comments fa-2x"></i>
+                <span>Openchat</span>
+            </div>
+        </div>
+
+        <!-- more suggestions-->
+        <div class="more-suggestions">
+            <h2 class="more-suggestions__header">Suggestions</h2>
+            <div class="icon-row icon-row__wrap">
+                <div class="icon-row__icon">
+                    <img class="more-suggestions__img" src="../screenshots/kakao_story.jpeg" alt="icon-row__icon-img">
+                    <span>Kakao Story</span>
+                </div>
+                <div class="icon-row__icon">
+                    <img class="more-suggestions__img" src="../screenshots/kakao_friends.png" alt="icon-row__icon-img">
+                    <span>Kakao friends</span>
+                </div>
+                <div class="icon-row__icon">
+                    <img class="more-suggestions__img" src="../screenshots/kakao_gem.jpeg" alt="icon-row__icon-img">
+                    <span>Friends Gem</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <!-- navigation -->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-btn">
+                <a href="friends.html" class="nav-link">
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="chats.html" class="nav-link">
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="find.html" class="nav-link">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="more.html" class="nav-link">
+                    <span class="nav-reddot"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+<script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+></script>
+</html>

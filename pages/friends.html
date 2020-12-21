@@ -18,11 +18,24 @@
             <span class="now">
                 <script>
                     let today = new Date();
-                    now = today.getHours() + "시 " + today.getMinutes() + "분";
-                    console.log(now);
+                    let nowHours = "";
+                    let nowMinutes = "";
+                    if(today.getHours() < 10){
+                        nowHours = "0" + today.getHours();
+                    }else{
+                        nowHours = today.getHours();
+                    }
+                    if(today.getMinutes() < 10){
+                        nowMinutes = "0" + today.getMinutes();
+                    }else{
+                        nowMinutes = today.getMinutes();
+                    }
+
+                    now = nowHours + " : " + nowMinutes;
+                    
                     document.write(now);
                 </script>
-            </span>            
+            </span>               
         </div>
         <div class="status-bar__column">
             <span>100%</span>
@@ -31,27 +44,85 @@
         </div>
     </div>
 
+    <!-- 헤더 영역-->
+    <header class="screen-header">
+        <h1 class="screen-header__title">Friends</h1>
+        <div class="screen-header__icons">
+            <i class="fas fa-search fa-lg"></i>
+            <i class="fas fa-music fa-lg"></i>
+            <i class="fas fa-cog fa-lg"></i>
+        </div>
+    </header>
+
+    <a href="#" id="friends-display-link">
+        <i class="fas fa-info-circle"></i>
+        <span>Friends' Names Display</span>
+        <i class="fas fa-angle-right"></i>
+    </a>
+
+    <!-- 스크린 영역-->
+    <main class="friends-main">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img class="user-component__img user-component__img-lg" src="../screenshots/user_profile.jpg" alt="user-profile-img">
+                <div class="user-component__text">
+                    <h2 class="user-component__title">user nickname</h2>
+                    <!--<h3 class="user-component__subtitle">this text whatever</div>-->
+                </div>
+            </div>
+            <div class="user-component__column">
+            
+            </div>
+        </div>
+        <div class="friends-main__channel">
+            <div class="friends-main__channel-header">
+                <h2>Channel</h2>
+                <i class="fas fa-angle-up"></i>
+            </div>
+
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__img user-component__img-sm" src="../screenshots/user_profile.jpg" alt="user-profile-img">
+                    <div class="user-component__text">
+                        <h2 class="user-component__title">user nickname</h2>
+                        <!--<h3 class="user-component__subtitle">this text whatever</div>-->
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    
+
     <!-- 메뉴 버튼-->
     <nav>
         <ul class="nav-list">
             <li class="nav-btn">
-                <a href="#" class="nav-link">
-                    <i class="fas fa-user fa-lg"></i>
+                <a href="friends.html" class="nav-link">
+                    <i class="fas fa-user fa-2x"></i>
                 </a>
             </li>
             <li class="nav-btn">
-                <a href="#" class="nav-link">
-                    <i class="far fa-comment fa-lg"></i>
+                <a href="chats.html" class="nav-link">
+                    <span class="nav-notification badge">1</span>
+                    <i class="far fa-comment fa-2x"></i>
                 </a>
             </li>
             <li class="nav-btn">
-                <a href="#" class="nav-link">
-                    <i class="fas fa-search fa-lg"></i>
+                <a href="find.html" class="nav-link">
+                    <i class="fas fa-search fa-2x"></i>
                 </a>
             </li>
             <li class="nav-btn">
-                <a href="#" class="nav-link">
-                    <i class="fas fa-ellipsis-h fa-lg"></i>
+                <a href="more.html" class="nav-link">
+                    <span class="nav-reddot"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
                 </a>
             </li>
         </ul>

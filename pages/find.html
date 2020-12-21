@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Kokoa Clone</title>
+</head>
+<body>
+    <!-- 상단 상태바 -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span class="now">
+                <script>
+                    let today = new Date();
+                    let nowHours = "";
+                    let nowMinutes = "";
+                    if(today.getHours() < 10){
+                        nowHours = "0" + today.getHours();
+                    }else{
+                        nowHours = today.getHours();
+                    }
+                    if(today.getMinutes() < 10){
+                        nowMinutes = "0" + today.getMinutes();
+                    }else{
+                        nowMinutes = today.getMinutes();
+                    }
+
+                    now = nowHours + " : " + nowMinutes;
+                    
+                    document.write(now);
+                </script>
+            </span>            
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <!-- 헤더 영역-->
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <i class="fas fa-search fa-lg"></i>
+            <i class="fas fa-cog fa-lg"></i>
+        </div>
+    </header>
+
+    <!-- 스크린 영역-->
+    <main class="main-screen">
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="fas fa-qrcode fa-2x"></i>
+                <span>QR Code</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-address-book fa-2x"></i>
+                <span>Add by Contacts</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-fingerprint fa-2x"></i>        
+                <span>Add by ID</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-envelope fa-2x"></i>
+                <span>Invite</span>
+            </div>
+        </div>
+
+        <div class="recommended-friends">
+            <h4 class="recommended-friends__title">Recommended Friends</h2>
+            <div class="recommended-friends__text">
+                <span>You have no recommended friends.</span>
+            </div>
+        </div>
+
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4 class="open-chat__header-title">Open Chat</h4>
+                <div class="open-chat__header-text">
+                    <span>Go to Openchat Home</span>
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#BTS</h5>
+                    <h6 class="open-post__hashtags">#BTS#ARMY#FRIENDS</h6>
+                    <div class="open-post__members">
+                        <img src="../screenshots/01.png" alt="open-post-icon">
+                        <span class="open-post__members-count">802 members</span>
+                        <span class="divider"></span>
+                        <span class="open-post__members-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <img class="open-post__thumbnail" src="../screenshots/bts.png" alt="open-post-thumbnail">
+                    <div class="open-post__like-count">
+                        <i class="fas fa-heart"></i>
+                        <span>326</span>
+                    </div>
+                </div>
+            </div>
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#Bts Gang~</h5>
+                    <h6 class="open-post__hashtags">#englishonly#ipurpleyou#jimin</h6>
+                    <div class="open-post__members">
+                        <img src="../screenshots/01.png" alt="open-post-icon">
+                        <span class="open-post__members-count">299 members</span>
+                        <span class="divider"></span>
+                        <span class="open-post__members-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <img class="open-post__thumbnail" src="../screenshots/bts_army.jpeg" alt="open-post-thumbnail">
+                    <div class="open-post__like-count">
+                        <i class="fas fa-heart"></i>
+                        <span>215</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <!-- 메뉴 버튼-->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-btn">
+                <a href="friends.html" class="nav-link">
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="chats.html" class="nav-link">
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="find.html" class="nav-link">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="more.html" class="nav-link">
+                    <span class="nav-reddot"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+<script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+></script>
+</html>

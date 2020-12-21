@@ -52,6 +52,6 @@ input:focus{
 }
 
 a, a:visited,  a:hover{
-    color: black;
+    color: #2e363e;
     text-decoration: none;
 }
