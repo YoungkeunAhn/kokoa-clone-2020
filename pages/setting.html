@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats - Kokoa Clone</title>
+</head>
+<body>
+    <!-- 상단 상태바 -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span class="now">
+                <script>
+                    let today = new Date();
+                    let nowHours = "";
+                    let nowMinutes = "";
+                    if(today.getHours() < 10){
+                        nowHours = "0" + today.getHours();
+                    }else{
+                        nowHours = today.getHours();
+                    }
+                    if(today.getMinutes() < 10){
+                        nowMinutes = "0" + today.getMinutes();
+                    }else{
+                        nowMinutes = today.getMinutes();
+                    }
+
+                    now = nowHours + " : " + nowMinutes;
+                    
+                    document.write(now);
+                </script>
+            </span>            
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <!-- 헤더 영역-->
+    <header class="settings-header">
+        <i class="fas fa-angle-left fa-2x"></i>
+        <h2>Settings</h2>
+        <i class="fas fa-search fa-lg"></i>
+    </header>
+
+    <!-- 스크린 영역-->
+    <main class="main-screen more-screen__margin-bottom">
+        <div class="settings-menu">
+            <div class="settings-menu__row">
+                <div class="settings-menu__column">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Notices</span>
+                </div>
+            </div>
+            <div class="settings-menu__row">
+                <div class="settings-menu__column">
+                    <i class="fas fa-flask"></i>
+                    <span>Kakao Lab</span>
+                </div>
+            </div>
+            <div class="settings-menu__row">
+                <div class="settings-menu__column">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Version</span>
+                </div>
+                <div class="settings-menu__column">
+                    <span>Latest Version</span>
+                </div>
+            </div>
+        </div>
+        <div class="settings-menu">
+            <div class="settings-menu__row">
+                <div class="settings-menu__column">
+                    <i class="fas fa-lock"></i>
+                    <span>Privacy</span>
+                </div>
+            </div>
+            <div class="settings-menu__row">
+                <div class="settings-menu__column">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </div>
+            </div>
+            <div class="settings-menu__row">
+                <div class="settings-menu__column">
+                    <i class="fas fa-user"></i>
+                    <span>Friends</span>
+                </div>
+            </div>
+            <div class="settings-menu__row">
+                <div class="settings-menu__column">
+                    <i class="fas fa-comment"></i>
+                    <span>Chats</span>
+                </div>
+            </div>
+            <div class="settings-menu__row">
+                <div class="settings-menu__column">
+                    <i class="fas fa-adjust"></i>
+                    <span>Display</span>
+                    <span class="badge new-badge">N</span>
+                </div>
+            </div>
+            <div class="settings-menu__row">
+                <div class="settings-menu__column">
+                    <i class="fas fa-brush"></i>
+                    <span>Themes</span>
+                    <span class="badge new-badge">N</span>
+                </div>
+                <div class="settings-menu__column">
+                    <span>Default theme</span>
+                </div>
+            </div>
+            <div class="settings-menu__row">
+                <div class="settings-menu__column">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <!-- 메뉴 버튼-->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-btn">
+                <a href="friends.html" class="nav-link">
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="chats.html" class="nav-link">
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="find.html" class="nav-link">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav-btn">
+                <a href="more.html" class="nav-link">
+                    <span class="nav-reddot"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+<script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+></script>
+</html>

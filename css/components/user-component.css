@@ -1,3 +1,6 @@
+.user-component{
+    padding: 20px 0;
+}
 .user-component,
 .user-component__column:first-child{
     display: flex;
@@ -10,7 +13,7 @@
     height: 70px;
     border-radius: 35%;
 
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .user-component__title{

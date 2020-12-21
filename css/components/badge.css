@@ -11,3 +11,9 @@
     background-color: tomato;
     font-weight: 600;
 }
+
+.new-badge{
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+}
