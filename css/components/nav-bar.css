@@ -23,8 +23,9 @@ nav{
     position: absolute;
     left: 15px;
     bottom: 15px;
+    
+    animation: bounceBadgeAnimation 2s ease-in-out infinite;
 }
-
 .nav-reddot{
     width: 5px;
     height: 5px;
@@ -36,4 +37,44 @@ nav{
     position: absolute;
     bottom: 30px;
     left: 30px;
+}
+
+@keyframes bounceBadgeAnimation{
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: translateY(-5px) rotateY(360deg);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+@keyframes appearBtn{
+    80%{
+        transform: translateY(-10px);
+    }
+    90%{
+        transform: translateY(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.nav-btn{
+    transform: translateY(50px);
+    opacity: 0;
+    animation: appearBtn .3s ease-in-out forwards;
+}
+.nav-btn:nth-child(2){
+    animation-delay: .3s;
+}
+.nav-btn:nth-child(3){
+    animation-delay: .6s;
+}
+.nav-btn:last-child{
+    animation-delay: .9s;
 }

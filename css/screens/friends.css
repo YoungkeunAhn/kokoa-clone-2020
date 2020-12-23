@@ -32,6 +32,17 @@
     padding: 15px 0;
 }
 
+@keyframes hiddensplash{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
 #splash-screen{
     display: flex;
     justify-content: center;
@@ -47,4 +58,7 @@
     left: 0;
 
     z-index: 10;
+
+    animation: hiddensplash .4s ease-in forwards 1s;
 }
+
